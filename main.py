@@ -32,11 +32,8 @@ async def on_message(message):
     print(f'[{channel,}] {username}:{user_message}')
     await send_message(message, user_message)
 
-
-def main():
-    client.run(token=TOKEN)
+client.run(token=TOKEN)
 
 
-if __name__ == '__main__':
-    main()
+
 
